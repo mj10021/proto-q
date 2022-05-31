@@ -1,0 +1,42 @@
+    <div class="row">
+        <div class="col">
+        <label for="printerType" class="form-label">Printer Type</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="printerType" id="FDM">
+                    <label class="form-check-label" for="FDM">
+                        FDM
+                    </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="printerType" id="SLA">
+                    <label class="form-check-label" for="SLA">
+                        SLA
+                    </label>
+            </div>
+        </div>
+        <div class="col">
+          <label for="filamentList" class="form-label">Filament</label>
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search for a filament...">
+          <datalist id="datalistOptions">
+            <option value="PLA, Generic">
+            <option value="PETG, Generic">
+            <option value="PLA, Prusament">
+            <option value="PETG, Prusament">
+            <option value="Taulman Tech-G">
+            <option value="Taulman T-Glase">
+            <option value="Taulman 645">
+            <option value="Taulman 910">
+            <option value="Ninjatek Armadillo">
+          </datalist>
+        </div>
+        <div class="col">
+          <label for="infillList" class="form-label">Filament</label>
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search for an infill type...">
+          <datalist id="datalistOptions">
+            <option value="Grid">
+            <option value="Gyroid">
+            <option value="Supportive Cubic">
+            <option value="Adaptive Cubic">
+          </datalist>
+        </div>
+    </div>
