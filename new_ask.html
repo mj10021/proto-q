@@ -1,76 +1,79 @@
-
 <div class="container">
-  <div class="row"> 
-      <img src="..." class="img-fluid" alt="...">
-  </div>  
   <div class="row">
-      <a href="valid link explanation">What model links are valid?</a>
+    <img src="..." class="img-fluid" alt="...">
+  </div>
+  <div class="row">
+    <a href="valid link explanation">Which model links are valid?</a>
+  </div>
+
+  <div class="row">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Paste valid .STL link here" aria-label="link"
+        aria-describedby="modelLoader">
+      <button class="btn btn-outline-secondary" type="button" id="modelLoader">Populate</button>
     </div>
-    
-    <div class="row">
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Paste valid .STL link here" aria-label="link" aria-describedby="modelLoader">
-        <button class="btn btn-outline-secondary" type="button" id="modelLoader">Load model</button>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="printerType" class="form-label">Printer Type</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="printerType" id="FDM">
+        <label class="form-check-label" for="FDM">FDM</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="printerType" id="SLA">
+        <label class="form-check-label" for="SLA">SLA</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="printerType" id="SLS">
+        <label class="form-check-label" for="SLS"> SLS </label>
       </div>
     </div>
-    <div class="row">
-      <div class="col">
-        <label for="printerType" class="form-label">Printer Type</label>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="printerType" id="FDM">
-          <label class="form-check-label" for="FDM">FDM</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="printerType" id="SLA">
-                <label class="form-check-label" for="SLA">SLA</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="printerType" id="SLS">
-                <label class="form-check-label" for="SLS"> SLS </label>
-            </div>
+    <div class="col">
+      <label for="nozzleSize" class="form-label">Nozzle size:</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="nozzle1" id="0.25">
+        <label class="form-check-label" for="FDM">0.25mm</label>
       </div>
-      <div class="col">
-        <label for="nozzleSize" class="form-label">Nozzle size:</label>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="nozzle1" id="0.25">
-          <label class="form-check-label" for="FDM">0.25mm</label>
-        </div>
-          <div class="form-check">
-              <input class="form-check-input" type="radio" name="nozzle2" id="0.4">
-              <label class="form-check-label" for="SLA">0.4mm</label>
-          </div>
-          <div class="form-check">
-              <input class="form-check-input" type="radio" name="nozzle3" id="0.8">
-              <label class="form-check-label" for="nozzle3"> 0.8mm </label>
-          </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="nozzle2" id="0.4">
+        <label class="form-check-label" for="SLA">0.4mm</label>
       </div>
-        <div class="col">
-          <label for="layerHeightRange" class="form-label">Layer height:</label>
-          <input type="range" class="form-range" min="0.1" max="0.6" step="0.1" id="customRange3">
-        </div>
-        <div class="col">
-          <input class="form-control" list="materialOptions" id="materialList" placeholder="Material type">
-          <datalist id="materialOptions">
-            <option value="PLA, Generic">
-            <option value="PETG, Generic">
-            <option value="PLA, Prusament">
-            <option value="PETG, Prusament">
-            <option value="Taulman Tech-G">
-            <option value="Taulman T-Glase">
-            <option value="Taulman 645">
-            <option value="Taulman 910">
-            <option value="Ninjatek Armadillo">
-            <option value="Ninjatek Ninjaflex">
-          </datalist>
-        </div>
-        <div class="col">
-          <input class="form-control" list="infillOptions2" id="infillList" placeholder="Infill type">
-          <datalist id="infillOptions2">
-            <option value="Grid">
-            <option value="Gyroid">
-            <option value="Supportive Cubic">
-            <option value="Adaptive Cubic">
-          </datalist>
-        </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="nozzle3" id="0.8">
+        <label class="form-check-label" for="nozzle3"> 0.8mm </label>
+      </div>
     </div>
+    <div class="col">
+      <label for="layerHeightRange" class="form-label">Layer height:</label>
+      <input type="range" class="form-range" min="0.1" max="0.6" step="0.1" id="customRange3">
+    </div>
+    <div class="col">
+      <input class="form-control" list="materialOptions" id="materialList" placeholder="Material type">
+      <datalist id="materialOptions">
+        <option value="PLA, Generic">
+        <option value="PETG, Generic">
+        <option value="PLA, Prusament">
+        <option value="PETG, Prusament">
+        <option value="Taulman Tech-G">
+        <option value="Taulman T-Glase">
+        <option value="Taulman 645">
+        <option value="Taulman 910">
+        <option value="Ninjatek Armadillo">
+        <option value="Ninjatek Ninjaflex">
+      </datalist>
+    </div>
+    <div class="col">
+      <input class="form-control" list="infillOptions2" id="infillList" placeholder="Infill type">
+      <datalist id="infillOptions2">
+        <option value="Grid">
+        <option value="Gyroid">
+        <option value="Supportive Cubic">
+        <option value="Adaptive Cubic">
+      </datalist>
+    </div>
+  </div>
+  <div class="row">
+
+  </div>
 </div>
